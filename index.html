@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 <title>ZP - Zaildaar Photographs</title>
@@ -13,6 +13,140 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
+  <!-- About Section -->
+
+<section class="about">
+
+<h2>📷 About ZP Photography</h2>
+
+<p>
+Welcome to Zaildaar Photographs. We capture emotions, 
+Punjabi culture, nature, portraits and unforgettable memories 
+through creative photography and cinematic videos.
+Every frame tells a unique story.
+</p>
+
+</section>
+
+
+<!-- Booking Section -->
+
+<section class="booking">
+
+<h2>📞 Book a Shoot</h2>
+
+<p>For wedding, portraits, events and collaborations contact us.</p>
+
+<a href="tel:+911234567890" class="book-btn">
+Call Now
+</a>
+
+</section>
+
+
+<!-- Social Media -->
+
+<section class="social">
+
+<h2>Follow ZP Photography</h2>
+
+<a href="#">📸 Instagram</a>
+
+<a href="#">▶ YouTube</a>
+
+<a href="#">📘 Facebook</a>
+
+</section>
+
+
+<!-- Reviews -->
+
+<section class="reviews">
+
+<h2>⭐ Client Reviews</h2>
+
+<div class="review-box">
+"Wonderful pictures and amazing editing. Highly recommended!"
+</div>
+
+<div class="review-box">
+"Beautiful moments captured with creativity and passion."
+</div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+<h3>ZP - Zaildaar Photographs</h3>
+
+<p>
+Capturing moments. Creating memories.
+</p>
+
+<p>
+© 2026 ZP Photography. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<style>
+
+.about,
+.booking,
+.social,
+.reviews{
+padding:60px 8%;
+text-align:center;
+}
+
+.about p,
+.booking p{
+max-width:700px;
+margin:auto;
+line-height:1.7;
+}
+
+.book-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:gold;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:#222;
+color:gold;
+text-decoration:none;
+border-radius:25px;
+}
+
+.review-box{
+background:#1b1b1b;
+margin:15px auto;
+padding:20px;
+max-width:700px;
+border-radius:15px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:30px;
+color:#aaa;
+}
+
+</style>
 body{
 background:#080808;
 color:white;
@@ -90,6 +224,115 @@ font-weight:bold;
 
 </head>
 
+  <!-- Trending Tags -->
+
+<section class="tags">
+
+<h2>🔥 Trending Styles</h2>
+
+<div class="tag-box">
+<span>#PunjabiCulture</span>
+<span>#Wedding</span>
+<span>#Portrait</span>
+<span>#Nature</span>
+<span>#Cinematic</span>
+<span>#VillageLife</span>
+</div>
+
+</section>
+
+
+<!-- Back To Top Button -->
+
+<button onclick="topFunction()" id="topBtn">
+⬆
+</button>
+
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Animation */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+section{
+animation:fadeUp 1s ease;
+}
+
+/* Trending Tags */
+
+.tags{
+padding:60px 8%;
+text-align:center;
+}
+
+.tag-box span{
+display:inline-block;
+background:gold;
+color:black;
+padding:12px 20px;
+margin:10px;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.tag-box span:hover{
+transform:scale(1.1);
+}
+
+/* Top Button */
+
+#topBtn{
+position:fixed;
+bottom:25px;
+right:25px;
+padding:12px 16px;
+border:none;
+border-radius:50%;
+background:gold;
+font-size:20px;
+cursor:pointer;
+}
+
+</style>
+
+
+<script>
+
+let mybutton = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.body.scrollTop > 300 ||
+document.documentElement.scrollTop > 300)
+{
+mybutton.style.display="block";
+}
+else{
+mybutton.style.display="none";
+}
+};
+
+function topFunction(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+</script>
 <body>
 
 <nav>
@@ -130,343 +373,7 @@ Explore Now
 </div>
 
 </section>
-  
 <!-- Categories -->
-
-<section class="categories">
-
-<h2>Explore Categories</h2>
-
-<div class="boxes">
-<div>👳 Punjabi Culture</div>
-<div>🌿 Nature</div>
-<div>👤 Portraits</div>
-<div>🎉 Events</div>
-<div>🌅 Sunset</div>
-<div>🏞️ Villages</div>
-</div>
-
-</section>
-
-
-<!-- New Release -->
-
-<section class="new">
-
-<h2>🔥 NEW RELEASE</h2>
-
-<p>
-Discover the latest captured moments by ZP Photography
-</p>
-
-</section>
-
-
-<!-- Photo Gallery -->
-
-<section class="gallery">
-
-<h2>📸 Photo Collection</h2>
-
-<div class="photos">
-
-<img src="punjabi1.jpg">
-<img src="nature1.jpg">
-<img src="portrait1.jpg">
-<img src="event1.jpg">
-<img src="village1.jpg">
-<img src="sunset1.jpg">
-
-</div>
-
-</section>
-
-
-<!-- Video Section -->
-
-<section class="videos">
-
-<h2>🎥 Cinematic Videos</h2>
-
-<video controls>
-<source src="video1.mp4">
-</video>
-
-</section>
-
-
-<style>
-
-.categories,
-.gallery,
-.videos,
-.new{
-padding:50px 8%;
-text-align:center;
-}
-
-.boxes{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.boxes div{
-background:#222;
-padding:20px;
-border-radius:15px;
-color:gold;
-}
-
-.new{
-background:#111;
-color:gold;
-}
-
-.photos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.photos img,
-video{
-width:100%;
-border-radius:15px;
-}
-
-.photos img:hover,
-.boxes div:hover{
-transform:scale(1.05);
-transition:0.3s;
-}
-
-</style><!-- Categories -->
-
-<section class="categories">
-
-<h2>Explore Categories</h2>
-
-<div class="boxes">
-<div>👳 Punjabi Culture</div>
-<div>🌿 Nature</div>
-<div>👤 Portraits</div>
-<div>🎉 Events</div>
-<div>🌅 Sunset</div>
-<div>🏞️ Villages</div>
-</div>
-
-</section>
-
-
-<!-- New Release -->
-
-<section class="new">
-
-<h2>🔥 NEW RELEASE</h2>
-
-<p>
-Discover the latest captured moments by ZP Photography
-</p>
-
-</section>
-
-
-<!-- Photo Gallery -->
-
-<section class="gallery">
-
-<h2>📸 Photo Collection</h2>
-
-<div class="photos">
-
-<img src="punjabi1.jpg">
-<img src="nature1.jpg">
-<img src="portrait1.jpg">
-<img src="event1.jpg">
-<img src="village1.jpg">
-<img src="sunset1.jpg">
-
-</div>
-
-</section>
-
-
-<!-- Video Section -->
-
-<section class="videos">
-
-<h2>🎥 Cinematic Videos</h2>
-
-<video controls>
-<source src="video1.mp4">
-</video>
-
-</section>
-
-
-<style>
-
-.categories,
-.gallery,
-.videos,
-.new{
-padding:50px 8%;
-text-align:center;
-}
-
-.boxes{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.boxes div{
-background:#222;
-padding:20px;
-border-radius:15px;
-color:gold;
-}
-
-.new{
-background:#111;
-color:gold;
-}
-
-.photos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.photos img,
-video{
-width:100%;
-border-radius:15px;
-}
-
-.photos img:hover,
-.boxes div:hover{
-transform:scale(1.05);
-transition:0.3s;
-}
-
-</style><!-- Categories -->
-
-<section class="categories">
-
-<h2>Explore Categories</h2>
-
-<div class="boxes">
-<div>👳 Punjabi Culture</div>
-<div>🌿 Nature</div>
-<div>👤 Portraits</div>
-<div>🎉 Events</div>
-<div>🌅 Sunset</div>
-<div>🏞️ Villages</div>
-</div>
-
-</section>
-
-
-<!-- New Release -->
-
-<section class="new">
-
-<h2>🔥 NEW RELEASE</h2>
-
-<p>
-Discover the latest captured moments by ZP Photography
-</p>
-
-</section>
-
-
-<!-- Photo Gallery -->
-
-<section class="gallery">
-
-<h2>📸 Photo Collection</h2>
-
-<div class="photos">
-
-<img src="punjabi1.jpg">
-<img src="nature1.jpg">
-<img src="portrait1.jpg">
-<img src="event1.jpg">
-<img src="village1.jpg">
-<img src="sunset1.jpg">
-
-</div>
-
-</section>
-
-
-<!-- Video Section -->
-
-<section class="videos">
-
-<h2>🎥 Cinematic Videos</h2>
-
-<video controls>
-<source src="video1.mp4">
-</video>
-
-</section>
-
-
-<style>
-
-.categories,
-.gallery,
-.videos,
-.new{
-padding:50px 8%;
-text-align:center;
-}
-
-.boxes{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.boxes div{
-background:#222;
-padding:20px;
-border-radius:15px;
-color:gold;
-}
-
-.new{
-background:#111;
-color:gold;
-}
-
-.photos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.photos img,
-video{
-width:100%;
-border-radius:15px;
-}
-
-.photos img:hover,
-.boxes div:hover{
-transform:scale(1.05);
-transition:0.3s;
-}
-  <!-- Categories -->
 
 <section class="categories">
 
